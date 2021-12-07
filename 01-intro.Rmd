@@ -4,7 +4,8 @@ You can label chapter and section titles using `{#label}` after them, e.g., we c
 
 Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
+```{r nice-fig, out.width='80%', fig.asp=.75, fig.align='center'}
+#| fig.cap = 'Here is a nice figure!'
 par(mar = c(4, 4, .1, .1))
 plot(pressure, type = 'b', pch = 19)
 ```
